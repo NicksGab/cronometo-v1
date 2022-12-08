@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, rgb(173, 173, 173), rgb(102, 102, 102));
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cronometro {
+  display: grid;
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 17px;
+  padding: 25px;
+  background: rgb(199, 199, 199);
+}
+
+.select {
+  cursor: pointer;
+}
+
+
+#comecar {
+  border-radius: 60px;
+  padding: 8px 15px;
+  background: rgb(67, 103, 168);
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+#comecar:hover {
+  background-color: rgb(21, 54, 202);
+}
+
+#comecar:active {
+  background: rgb(0, 162, 255);
+}
+
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 10px;
+  font-size: 30px;
+}
+
+#container .cronometro .desabilitado {
+  cursor: not-allowed;
+  background: gray;
+}
